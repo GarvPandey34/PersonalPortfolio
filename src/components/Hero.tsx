@@ -1,7 +1,8 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
-import { GoogleDriveImage } from './GoogleDriveImage';
 import { Download } from 'lucide-react';
+import heroImage from "../images/Hero Section/Blue-Suit.jpg";
+
 
 export function Hero() {
   const ref = useRef(null);
@@ -69,15 +70,15 @@ export function Hero() {
         <div className="relative h-full">
           {/* Main Portrait */}
           <div className="absolute inset-0">
-            <GoogleDriveImage
-              imageUrl="https://drive.google.com/file/d/1RSGr7rPCJe31iz5zXuNkNILWxgCFsz1g/view?usp=drive_link"
+            <img
+              src={heroImage}
               alt="Garv Pandey"
               className="w-full h-full object-cover"
               style={{
                 objectPosition: '45% center',
                 filter: 'contrast(1.08) brightness(1.02)',
               }}
-              fallbackIcon={false}
+              loading="lazy"
             />
           </div>
 
