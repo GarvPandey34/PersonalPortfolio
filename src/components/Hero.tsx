@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 import { Download } from 'lucide-react';
-import heroImage from "../images/Hero Section/Blue-Suit.jpg";
+import heroImage from "../images/hero-section/Blue-suit.jpg";
 
 
 export function Hero() {
